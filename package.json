@@ -1,0 +1,15 @@
+{
+  "name": "rmconsultants",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo  »… » && exit 1",
+    "scss": "node-sass --watch stylesheets -o stylesheets"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.13.0"
+  }
+}
