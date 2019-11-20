@@ -1,8 +1,8 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #2e81c4;
-  font-family: "Noto Sans KR", sans-serif;
+  background-color: #fff;
+  font-family: "Source Sans Pro", sans-serif;
   font-weight: 400; }
 
 body h1,
@@ -25,53 +25,103 @@ body .medium {
 body .bold {
   font-weight: 700; }
 
+body a {
+  text-decoration: none;
+  color: #000; }
+
 body .header {
   position: fixed;
   top: 0;
+  z-index: 99;
   background-color: #fff;
   display: flex;
-  padding: 2%;
+  flex-direction: column; }
+
+body .header .nav-contact {
+  background-color: #000;
+  padding: 0.6% 4%;
+  display: flex;
   justify-content: space-between; }
 
-body .header .logo {
+body .header .nav-contact .info-contact {
+  display: flex;
+  color: #777;
+  align-items: center; }
+
+body .header .nav-contact img {
+  width: 28px;
+  color: #fff;
+  padding-right: 10px; }
+
+body .header .nav-contact p {
+  font-size: 13px;
+  color: #777; }
+
+body .header .nav-pages {
+  padding: 1.8% 4%;
+  display: flex;
+  justify-content: space-between; }
+
+body .header .nav-pages .logo {
   width: 14%;
   min-width: 150px;
+  max-width: 180px;
   display: flex;
   flex-direction: column;
   align-items: center; }
 
-body .header .logo a {
+body .header .nav-pages .logo a {
   display: flex;
-  justify-content: center; }
+  flex-direction: column;
+  align-items: center; }
 
-body .header .logo a img {
+body .header .nav-pages .logo a img {
   width: 100%; }
 
-body .header .logo a .logo-rm {
+body .header .nav-pages .logo a .logo-rm {
   width: 88%; }
 
-body .header .navbar {
-  width: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end; }
+body .header .nav-pages .navbar {
+  padding: 0; }
 
-body .header .navbar a {
+body .header .nav-pages .navbar a {
   text-transform: uppercase;
   text-decoration: none;
   color: #777;
   padding: 0 10px;
   font-size: 14px; }
 
+body .header .nav-pages .navbar a:hover {
+  color: #5080c1; }
+
 body .section1 {
-  margin-top: 8.6%; }
+  margin-top: 10.2%; }
+
+body .section1 #carousel img {
+  filter: brightness(80%); }
+
+body .section1 .try {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(ellipse farthest-corner at center center, rgba(30, 39, 53, 0.261) 20%, rgba(30, 39, 53, 0.261) 100%) repeat scroll 0% 0%; }
+
+body .section1 .carousel-caption {
+  position: absolute;
+  top: 40%; }
+
+body .section1 .carousel-caption h5 {
+  text-transform: uppercase;
+  font-size: 40px; }
 
 body .footer-legal {
   display: flex;
   position: absolute;
   padding: 1%;
   background-color: #000;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   bottom: 0; }
 

@@ -17,33 +17,63 @@
       media="screen"
     />
     <link
-      href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700&display=swap"
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,700&display=swap"
       rel="stylesheet"
     />
 
     <title>RM Consultants | Absoluce</title>
   </head>
+
   <body>
     <!-- header -->
-    <header class="header w-100">
-      <div class="logo">
-        <a href="http://absoluce.net/">
-          <img class="logo-absoluce" src="images/logo-absoluce.png" alt="" />
-        </a>
-        <a href="index.html">
-          <img class="logo-rm" src="images/logo-rm.png" alt=""
-        /></a>
-      </div>
+    <header class="header w-100 container-fluid">
+      <section class="nav-contact row">
+        <div class="adress d-flex">
+          <div class="info-contact pr-4">
+            <img src="images/adress-icon.png" alt="" />
+            <p>
+              36, rue Jean Jullien-Davin BP 105 - 26904 Valence Cedex 9
+            </p>
+          </div>
+          <div
+            itemscope
+            itemtype="https://schema.org/LocalBusiness"
+            class="info-contact"
+          >
+            <img src="images/phone-icon.png" alt="" />
+            <span itemprop="telephone"
+              ><a href="tel:+33475784478"><p> 04 75 78 44 78</p></a></span
+            >
+          </div>        
+          </div>
+        </div>
+        <div class="info-contact">
+          <img src="images/mail-icon.png" alt="" />
+          <a href="mailto:rmconsultants@rmconsultants.fr"
+            ><p>rmconsultants@rmconsultants.fr</p></a
+          >
+        </div>
+      </section>
 
-      <div class="navbar">
-        <nav class="nav-desktop">
-          <a href="#">nous connaitre</a>
-          <a href="#">notre équipe</a>
-          <a href="#">services</a>
-          <a href="#">partenaires</a>
-          <a href="#">actualités</a>
-        </nav>
-      </div>
+      <section class="nav-pages row">
+        <div class="logo">
+         <a href="index.html">
+            <img class="logo-absoluce" src="images/logo-absoluce.png" alt="" />
+            <img class="logo-rm" src="images/logo-rm.png" alt=""
+          /></a>
+        </div>
+
+        <div class="navbar">
+          <nav class="nav-desktop">
+            <a href="#">Accueil</a>
+            <a href="#">nous connaitre</a>
+            <a href="#">notre équipe</a>
+            <a href="#">expertises</a>
+            <a href="#">partenaires</a>
+            <a href="#">actualités</a>
+          </nav>
+        </div>
+      </section>
     </header>
 
     <!-- section 1-->
@@ -65,10 +95,12 @@
               class="d-block w-100"
               alt="Slide 1"
             />
+            <div class="try"></div>
             <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
+              <h5>Vous créez votre entreprise</h5>
               <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+                Bénéficiez d'un accompagnement personnalisé pour réussir votre
+                projet.
               </p>
             </div>
           </div>
@@ -78,10 +110,12 @@
               class="d-block w-100"
               alt="Slide 2"
             />
+            <div class="try"></div>
             <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
+              <h5>CONFIEZ NOUS VOTRE COMPTABILITÉ</h5>
               <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+                Gagnez du temps et concentrez vous sur l'essentiel : votre
+                business.
               </p>
             </div>
           </div>
@@ -91,10 +125,11 @@
               class="d-block w-100"
               alt="Slide 3"
             />
+            <div class="try"></div>
             <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
+              <h5>CONTACTEZ-NOUS</h5>
               <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+                Nous pouvons vous aidez, contactez-nous
               </p>
             </div>
           </div>
@@ -121,7 +156,34 @@
     </section>
 
     <!-- section 2 -->
-    <section class="section2"></section>
+    <section class="section2 w-100 d-flex">
+      <div class="col">
+        <h2>Création d'entreprise</h2>
+        <p>
+          Envie d’indépendance et de challenge dans votre vie professionnelle,
+          vous avez décidé de créer votre société. RM CONSULTANTS EXPERTISE vous
+          assiste et vous conseille dans les différentes étapes de votre projet
+          de création d’entreprise. Viabilité du projet.
+        </p>
+      </div>
+      <div class="col">
+        <h2>Développer et piloter</h2>
+        <p>
+          Après la création de votre entreprise, nous vous accompagnons pour
+          pérenniser votre entreprise et pour développer votre activité. Des
+          indicateurs et des outils adaptés à votre situation vous permettront
+          de mettre en place une gestion performante.
+        </p>
+      </div>
+      <div class="col">
+        <h2>Reprendre ou céder</h2>
+        <p>
+          Vous avez pris la décision de reprendre ou céder votre entreprise. RM
+          CONSULTANTS EXPERTISE est à vos côtés pour répondre à vos questions et
+          vous accompagner.
+        </p>
+      </div>
+    </section>
 
     <!-- footer -->
     <footer class="footer w-100"></footer>
