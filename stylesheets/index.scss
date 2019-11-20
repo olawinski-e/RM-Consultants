@@ -1,3 +1,133 @@
+$white: #fff;
+$black: #000;
+$blue: #2e81c4;
+$grey: #777;
+
 body {
-  background-color: lightblue;
+  margin: 0;
+  padding: 0;
+  background-color: $blue;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  p,
+  ul,
+  li,
+  a {
+    margin: 0;
+    padding: 0;
+  }
+
+  .light {
+    font-weight: 300;
+  }
+
+  .medium {
+    font-weight: 500;
+  }
+
+  .bold {
+    font-weight: 700;
+  }
+
+  // header
+  .header {
+    position: fixed;
+    top: 0;
+    background-color: $white;
+    display: flex;
+    padding: 2%;
+    justify-content: space-between;
+
+    .logo {
+      width: 14%;
+      min-width: 150px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      a {
+        display: flex;
+        justify-content: center;
+        img {
+          width: 100%;
+        }
+        .logo-rm {
+          width: 88%;
+        }
+      }
+    }
+
+    .navbar {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      a {
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $grey;
+        padding: 0 10px;
+        font-size: 14px;
+      }
+    }
+  }
+
+  //section
+  .section1 {
+    margin-top: 8.6%;
+  }
+
+  //footer
+  .footer-legal {
+    display: flex;
+    position: absolute;
+    padding: 1%;
+    background-color: $black;
+    justify-content: space-around;
+    align-items: center;
+    bottom: 0;
+
+    .first-div {
+      display: flex;
+
+      .logo-absoluce {
+        width: 8%;
+        min-width: 120px;
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+        img {
+          width: 100%;
+        }
+      }
+
+      ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        justify-content: space-between;
+        font-size: 12px;
+        align-items: center;
+        li {
+          padding: 0 10px;
+          a {
+            text-decoration: none;
+            color: $grey;
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    p {
+      font-size: 12px;
+      color: $grey;
+    }
+  }
 }

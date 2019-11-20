@@ -1,2 +1,109 @@
 body {
-  background-color: lightblue; }
+  margin: 0;
+  padding: 0;
+  background-color: #2e81c4;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400; }
+
+body h1,
+body h2,
+body h3,
+body h4,
+body p,
+body ul,
+body li,
+body a {
+  margin: 0;
+  padding: 0; }
+
+body .light {
+  font-weight: 300; }
+
+body .medium {
+  font-weight: 500; }
+
+body .bold {
+  font-weight: 700; }
+
+body .header {
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+  display: flex;
+  padding: 2%;
+  justify-content: space-between; }
+
+body .header .logo {
+  width: 14%;
+  min-width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+body .header .logo a {
+  display: flex;
+  justify-content: center; }
+
+body .header .logo a img {
+  width: 100%; }
+
+body .header .logo a .logo-rm {
+  width: 88%; }
+
+body .header .navbar {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; }
+
+body .header .navbar a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #777;
+  padding: 0 10px;
+  font-size: 14px; }
+
+body .section1 {
+  margin-top: 8.6%; }
+
+body .footer-legal {
+  display: flex;
+  position: absolute;
+  padding: 1%;
+  background-color: #000;
+  justify-content: space-around;
+  align-items: center;
+  bottom: 0; }
+
+body .footer-legal .first-div {
+  display: flex; }
+
+body .footer-legal .first-div .logo-absoluce {
+  width: 8%;
+  min-width: 120px;
+  display: flex;
+  align-items: center;
+  margin-right: 20px; }
+
+body .footer-legal .first-div .logo-absoluce img {
+  width: 100%; }
+
+body .footer-legal .first-div ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-between;
+  font-size: 12px;
+  align-items: center; }
+
+body .footer-legal .first-div ul li {
+  padding: 0 10px; }
+
+body .footer-legal .first-div ul li a {
+  text-decoration: none;
+  color: #777;
+  width: 100%; }
+
+body .footer-legal p {
+  font-size: 12px;
+  color: #777; }
