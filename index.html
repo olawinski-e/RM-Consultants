@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
@@ -16,10 +24,6 @@
       href="stylesheets/index.css"
       media="screen"
     />
-    <link
-      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,700&display=swap"
-      rel="stylesheet"
-    />
 
     <title>RM Consultants | Absoluce</title>
   </head>
@@ -29,8 +33,8 @@
     <header class="header w-100 container-fluid">
       <section class="nav-contact row">
         <div class="adress d-flex">
-          <div class="info-contact pr-4">
-            <img src="images/adress-icon.png" alt="" />
+          <div class="info-contact pr-3">
+            <img src="images/adressblue-icon.png" alt="adress" />
             <p>
               36, rue Jean Jullien-Davin BP 105 - 26904 Valence Cedex 9
             </p>
@@ -38,43 +42,139 @@
           <div
             itemscope
             itemtype="https://schema.org/LocalBusiness"
-            class="info-contact"
+            class="info-contact pr-3"
           >
-            <img src="images/phone-icon.png" alt="" />
-            <span itemprop="telephone"
-              ><a href="tel:+33475784478"><p> 04 75 78 44 78</p></a></span
+            <img src="images/phoneblue-icon.png" alt="phone number" />
+            <span itemprop="telephone">
+              <a href="tel:+33475784478">
+                <p>
+                  04 75 78 44 78
+                </p></a
+              >
+            </span>
+          </div>
+          <div class="d-flex">
+            <img src="images/mailblue-icon.png" alt="email" />
+            <a href="mailto:rmconsultants@rmconsultants.fr"
+              ><p>rmconsultants@rmconsultants.fr</p></a
             >
-          </div>        
           </div>
         </div>
-        <div class="info-contact">
-          <img src="images/mail-icon.png" alt="" />
-          <a href="mailto:rmconsultants@rmconsultants.fr"
-            ><p>rmconsultants@rmconsultants.fr</p></a
-          >
-        </div>
-      </section>
 
-      <section class="nav-pages row">
-        <div class="logo">
-         <a href="index.html">
-            <img class="logo-absoluce" src="images/logo-absoluce.png" alt="" />
-            <img class="logo-rm" src="images/logo-rm.png" alt=""
-          /></a>
-        </div>
-
-        <div class="navbar">
-          <nav class="nav-desktop">
-            <a href="#">Accueil</a>
-            <a href="#">nous connaitre</a>
-            <a href="#">notre équipe</a>
-            <a href="#">expertises</a>
-            <a href="#">partenaires</a>
-            <a href="#">actualités</a>
-          </nav>
+        <div class="reseaux-sociaux">
+          <a href="https://www.linkedin.com/company/absoluce/">
+            <i class="fa fa-linkedin" style="font-size:22px;color:#00c4f0;"></i
+          ></a>
+          <a href="https://vimeo.com/inaa"
+            ><i
+              class="fa fa-vimeo"
+              style="font-size:22px;color:#00c4f0;"
+            ></i> </a
+          ><a href="https://www.youtube.com/channel/UC6EB7RSKyC10eTkrv2vTxWw"
+            ><i
+              class="fa fa-youtube-play"
+              style="font-size:22px;color:#00c4f0;"
+            ></i
+          ></a>
         </div>
       </section>
     </header>
+
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light shadow-sm">
+      <a class="navbar-brand" href="index.html">
+        <img class="logo-absoluce" src="images/logo-absoluce.png" alt="" />
+        <img class="logo-rm" src="images/logo-rm.png" alt="" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div
+        class="collapse navbar-collapse navigation subnav"
+        id="navbarSupportedContent"
+      >
+        <ul class="navigation">
+          <li class="link">
+            <a class="active my-auto" href="index.html">Accueil</a>
+          </li>
+          <li class="link dropdown">
+            <a id="reflink " class="blockline">Nous connaitre</a>
+            <div class="dropborder">
+              <ul>
+                <li class="dropdown-content"><a id="1" href="">1</a></li>
+                <li class="dropdown-content">
+                  <a id="2" href="">2</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="link dropdown">
+            <a id="reflink my-auto" class="blockline">Notre équipe</a>
+            <div class="dropborder">
+              <ul>
+                <li class="dropdown-content"><a id="3" href="">3</a></li>
+                <li class="dropdown-content">
+                  <a id="4" href="">4</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="link dropdown">
+            <a id="reflink my-auto" class="blockline">Nos services</a>
+            <div class="dropborder">
+              <ul>
+                <li class="dropdown-content">
+                  <a id="comptabilité" href="">Comptabilité</a>
+                </li>
+                <li class="dropdown-content">
+                  <a id="audit" href="">Audit / Commissariat aux comptes</a>
+                </li>
+
+                <li class="dropdown-content">
+                  <a id="conseil" href="">Conseil juridique et fiscal</a>
+                </li>
+
+                <li class="dropdown-content">
+                  <a id="social" href="">Social</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="link dropdown">
+            <a id="reflink my-auto" class="blockline">Nos partenaires</a>
+            <div class="dropborder">
+              <ul>
+                <li class="dropdown-content"><a id="7l" href="">7</a></li>
+                <li class="dropdown-content">
+                  <a id="8kype" href="">8</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="link dropdown">
+            <a id="reflink my-auto" class="blockline">actualités</a>
+            <div class="dropborder">
+              <ul>
+                <li class="dropdown-content"><a id="9" href="">9</a></li>
+                <li class="dropdown-content">
+                  <a id="10" href="">10</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+navbarSupportedContent"></div> 
+    </nav>-->
 
     <!-- section 1-->
     <section class="section1">
@@ -97,7 +197,7 @@
             />
             <div class="try"></div>
             <div class="carousel-caption d-none d-md-block">
-              <h5>Vous créez votre entreprise</h5>
+              <h3>Vous créez votre entreprise</h3>
               <p>
                 Bénéficiez d'un accompagnement personnalisé pour réussir votre
                 projet.
@@ -112,7 +212,7 @@
             />
             <div class="try"></div>
             <div class="carousel-caption d-none d-md-block">
-              <h5>CONFIEZ NOUS VOTRE COMPTABILITÉ</h5>
+              <h3>CONFIEZ NOUS VOTRE COMPTABILITÉ</h3>
               <p>
                 Gagnez du temps et concentrez vous sur l'essentiel : votre
                 business.
@@ -127,7 +227,7 @@
             />
             <div class="try"></div>
             <div class="carousel-caption d-none d-md-block">
-              <h5>CONTACTEZ-NOUS</h5>
+              <h3>CONTACTEZ-NOUS</h3>
               <p>
                 Nous pouvons vous aidez, contactez-nous
               </p>
@@ -156,7 +256,7 @@
     </section>
 
     <!-- section 2 -->
-    <section class="section2 w-100 d-flex">
+    <section class="section2 w-100 d-flex p-4">
       <div class="col">
         <h2>Création d'entreprise</h2>
         <p>
@@ -186,7 +286,23 @@
     </section>
 
     <!-- footer -->
-    <footer class="footer w-100"></footer>
+    <footer class="footer w-100">
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="">Coordonées</a></li>
+          <li><a href="">Plan d'accès</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Liens</h4>
+        <ul>
+          <li><a href="">Absoluce</a></li>
+          <li><a href="">Inaa</a></li>
+        </ul>
+      </div>
+    </footer>
 
     <!-- footer legal -->
     <footer class="footer-legal w-100">
@@ -198,7 +314,6 @@
           <li><a href="#">Plan du site</a></li>
           <li><a href="#">Protection des données</a></li>
           <li><a href="#">Cookies</a></li>
-          <li><a href="#">Accessibilité</a></li>
         </ul>
       </div>
 

@@ -3,7 +3,8 @@ body {
   padding: 0;
   background-color: #fff;
   font-family: "Source Sans Pro", sans-serif;
-  font-weight: 400; }
+  font-weight: 400;
+  color: #1c252b; }
 
 body h1,
 body h2,
@@ -15,6 +16,12 @@ body li,
 body a {
   margin: 0;
   padding: 0; }
+
+body li,
+body ul,
+body ol {
+  list-style: none;
+  text-decoration: none; }
 
 body .light {
   font-weight: 300; }
@@ -30,7 +37,7 @@ body a {
   color: #000; }
 
 body .header {
-  position: fixed;
+  max-height: 148px;
   top: 0;
   z-index: 99;
   background-color: #fff;
@@ -38,64 +45,149 @@ body .header {
   flex-direction: column; }
 
 body .header .nav-contact {
-  background-color: #000;
-  padding: 0.6% 4%;
+  background-color: #1c252b;
+  padding: 8px 4%;
   display: flex;
+  align-items: center;
   justify-content: space-between; }
+
+body .header .nav-contact .adress {
+  display: flex;
+  align-items: center; }
 
 body .header .nav-contact .info-contact {
   display: flex;
-  color: #777;
+  color: #00c4f0;
   align-items: center; }
 
 body .header .nav-contact img {
-  width: 28px;
+  height: 22px;
   color: #fff;
   padding-right: 10px; }
 
 body .header .nav-contact p {
   font-size: 13px;
-  color: #777; }
+  color: #fff; }
 
-body .header .nav-pages {
-  padding: 1.8% 4%;
+body .header .nav-contact .reseaux-sociaux {
   display: flex;
-  justify-content: space-between; }
+  color: #00c4f0;
+  align-items: center; }
 
-body .header .nav-pages .logo {
-  width: 14%;
+body .header .nav-contact .reseaux-sociaux a {
+  padding: 0 10px; }
+
+body .header .nav-contact .reseaux-sociaux i:hover {
+  opacity: 0.7; }
+
+body .sticky {
+  position: fixed;
+  top: 0;
+  width: 100%; }
+
+body .sticky + .section1 {
+  padding-top: 80px; }
+
+body #navbar {
+  z-index: 999;
+  padding: 0 4%;
+  display: flex;
+  height: 80px;
+  background-color: #fff; }
+
+body #navbar .navbar-brand {
+  width: 11%;
   min-width: 150px;
   max-width: 180px;
   display: flex;
   flex-direction: column;
   align-items: center; }
 
-body .header .nav-pages .logo a {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-body .header .nav-pages .logo a img {
+body #navbar .navbar-brand img {
   width: 100%; }
 
-body .header .nav-pages .logo a .logo-rm {
+body #navbar .navbar-brand .logo-rm {
   width: 88%; }
 
-body .header .nav-pages .navbar {
-  padding: 0; }
+body .navbar ul li {
+  float: left;
+  list-style-type: none; }
 
-body .header .nav-pages .navbar a {
+body .navbar ul li a {
+  position: relative;
+  text-decoration: none;
+  transition: all 0.5s ease;
+  display: block; }
+
+body nav li .active {
+  text-decoration: none;
+  font-weight: 600;
+  color: #00c4f0; }
+
+body nav .dropdown {
+  position: static; }
+
+body nav .dropdown-content {
+  display: none;
+  position: static;
+  line-height: 50px;
+  min-width: 160px;
+  margin: 0 16px;
+  z-index: 4; }
+
+body nav .dropdown-content a {
+  color: #1c252b;
+  display: contents; }
+
+body nav .dropdown:hover .dropdown-content {
+  display: contents; }
+
+body nav .newsblock {
+  width: 500px;
+  height: 500px;
+  border: 5px solid white; }
+
+body nav .dropborder {
+  display: flex;
+  width: 100%;
+  left: 0;
+  top: 80px;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.96);
+  padding: 0 56px;
+  justify-content: flex-end;
+  text-align: end; }
+
+body nav .dropborder ul {
+  display: flex; }
+
+body nav .navigation {
+  padding: 0;
+  justify-content: flex-end;
+  height: inherit;
+  align-items: baseline; }
+
+body nav .navigation a {
   text-transform: uppercase;
   text-decoration: none;
-  color: #777;
   padding: 0 10px;
   font-size: 14px; }
 
-body .header .nav-pages .navbar a:hover {
-  color: #5080c1; }
+body nav .navigation a:hover {
+  color: #00c4f0; }
 
-body .section1 {
-  margin-top: 10.2%; }
+body nav .navigation li {
+  height: inherit; }
+
+body nav .navigation .link {
+  display: flex;
+  align-items: center; }
+
+body nav .navigation li:hover {
+  text-decoration: none;
+  color: #00c4f0;
+  cursor: pointer;
+  padding-bottom: 0; }
 
 body .section1 #carousel img {
   filter: brightness(80%); }
@@ -112,15 +204,16 @@ body .section1 .carousel-caption {
   position: absolute;
   top: 40%; }
 
-body .section1 .carousel-caption h5 {
+body .section1 .carousel-caption h3 {
   text-transform: uppercase;
   font-size: 40px; }
 
 body .footer-legal {
   display: flex;
   position: absolute;
-  padding: 1%;
-  background-color: #000;
+  padding: 10px;
+  height: 40px;
+  background-color: #1c252b;
   justify-content: space-between;
   align-items: center;
   bottom: 0; }
