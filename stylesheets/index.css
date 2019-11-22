@@ -92,16 +92,16 @@ body #navbar {
   z-index: 999;
   padding: 0 4%;
   display: flex;
-  height: 80px;
+  height: 100px;
   background-color: #fff; }
 
 body #navbar .navbar-brand {
-  width: 11%;
+  width: 16%;
   min-width: 150px;
-  max-width: 180px;
+  max-width: 200px;
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: flex-start; }
 
 body #navbar .navbar-brand img {
   width: 100%; }
@@ -151,7 +151,7 @@ body nav .dropborder {
   display: flex;
   width: 100%;
   left: 0;
-  top: 80px;
+  top: 100px;
   position: absolute;
   background-color: rgba(255, 255, 255, 0.96);
   padding: 0 56px;
@@ -192,13 +192,16 @@ body nav .navigation li:hover {
 body .section1 #carousel img {
   filter: brightness(80%); }
 
+body .section1 .carousel-indicators {
+  justify-content: space-around; }
+
 body .section1 .try {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: radial-gradient(ellipse farthest-corner at center center, rgba(30, 39, 53, 0.261) 20%, rgba(30, 39, 53, 0.261) 100%) repeat scroll 0% 0%; }
+  background: radial-gradient(ellipse farthest-corner at center center, rgba(28, 37, 43, 0.261) 20%, #1c252b 100%) repeat scroll 0% 0%; }
 
 body .section1 .carousel-caption {
   position: absolute;

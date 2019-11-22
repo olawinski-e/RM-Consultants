@@ -126,15 +126,15 @@ body {
     z-index: 999;
     padding: 0 4%;
     display: flex;
-    height: 80px;
+    height: 100px;
     background-color: $white;
     .navbar-brand {
-      width: 11%;
+      width: 16%;
       min-width: 150px;
-      max-width: 180px;
+      max-width: 200px;
       display: flex;
       flex-direction: column;
-      align-items: center;
+      align-items: flex-start;
 
       img {
         width: 100%;
@@ -196,7 +196,7 @@ body {
       display: flex;
       width: 100%;
       left: 0;
-      top: 80px;
+      top: 100px;
       position: absolute;
       background-color: rgba(255, 255, 255, 0.96);
       padding: 0 56px;
@@ -205,10 +205,6 @@ body {
 
       ul {
         display: flex;
-
-        a {
-          // border-right: solid 1px lightblue;
-        }
       }
     }
 
@@ -251,6 +247,10 @@ body {
     #carousel img {
       filter: brightness(80%);
     }
+    .carousel-indicators {
+      justify-content: space-around;
+    }
+
     .try {
       position: absolute;
       top: 0;
@@ -259,8 +259,8 @@ body {
       height: 100%;
       background: radial-gradient(
           ellipse farthest-corner at center center,
-          rgba(30, 39, 53, 0.261) 20%,
-          rgba(30, 39, 53, 0.261) 100%
+          rgba(#1c252b, 0.261) 20%,
+          #1c252b 100%
         )
         repeat scroll 0% 0%;
     }
