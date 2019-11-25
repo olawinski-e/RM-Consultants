@@ -1,17 +1,23 @@
-// * STICKY HEADER *
+$(window).on("load", function() {
+  //lance toutes nos actions, quand toutes les ressources externes sont chargées
 
-// When the user scrolls the page, execute myFunction
-window.onscroll = function() {
-  myFunction();
-};
+  ("use strict");
 
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
+  // * STICKY HEADER *
 
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky");
-  } else {
-    navbar.classList.remove("sticky");
+  // When the user scrolls the page, execute myFunction
+  window.onscroll = function() {
+    myFunction();
+  };
+
+  var navbar = document.getElementById("navbar");
+  var sticky = navbar.offsetTop;
+
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky");
+    } else {
+      navbar.classList.remove("sticky");
+    }
   }
-}
+});

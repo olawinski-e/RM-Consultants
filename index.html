@@ -24,6 +24,12 @@
       href="stylesheets/index.css"
       media="screen"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="stylesheets/responsive.css"
+      media="screen"
+    />
 
     <title>RM Consultants | Absoluce</title>
   </head>
@@ -31,9 +37,9 @@
   <body>
     <!-- header -->
     <header class="header w-100 container-fluid">
-      <section class="nav-contact row">
-        <div class="adress d-flex">
-          <div class="info-contact pr-3">
+      <section class="nav row">
+        <div class="nav--adress d-flex">
+          <div class="nav--info-contact pr-3">
             <img src="images/adressblue-icon.png" alt="adress" />
             <p>
               36, rue Jean Jullien-Davin BP 105 - 26904 Valence Cedex 9
@@ -42,7 +48,7 @@
           <div
             itemscope
             itemtype="https://schema.org/LocalBusiness"
-            class="info-contact pr-3"
+            class="nav--info-contact pr-3"
           >
             <img src="images/phoneblue-icon.png" alt="phone number" />
             <span itemprop="telephone">
@@ -61,7 +67,7 @@
           </div>
         </div>
 
-        <div class="reseaux-sociaux">
+        <div class="nav--reseaux-sociaux">
           <a href="https://www.linkedin.com/company/absoluce/">
             <i class="fa fa-linkedin" style="font-size:22px;color:#00c4f0;"></i
           ></a>
@@ -81,7 +87,7 @@
     </header>
 
     <nav id="navbar" class="navbar navbar-expand-lg navbar-light shadow-sm">
-      <a class="navbar-brand" href="index.html">
+      <a class="navbar--brand" href="index.html">
         <img
           class="logo-absoluce"
           src="images/logo-absoluce-rm.jpg"
@@ -100,81 +106,66 @@
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div
-        class="collapse navbar-collapse navigation subnav"
+      <ul
+        class="collapse navbar-collapse navbar--navigation"
         id="navbarSupportedContent"
       >
-        <ul class="navigation">
-          <li class="link">
-            <a class="active my-auto" href="index.html">Accueil</a>
-          </li>
-          <li class="link dropdown">
-            <a id="reflink " class="blockline">Nous connaitre</a>
-            <div class="dropborder">
-              <ul>
-                <li class="dropdown-content"><a id="1" href="">1</a></li>
-                <li class="dropdown-content">
-                  <a id="2" href="">2</a>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class="link dropdown">
-            <a id="reflink my-auto" class="blockline">Notre équipe</a>
-            <div class="dropborder">
-              <ul>
-                <li class="dropdown-content"><a id="3" href="">3</a></li>
-                <li class="dropdown-content">
-                  <a id="4" href="">4</a>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class="link dropdown">
-            <a id="reflink my-auto" class="blockline">Nos services</a>
-            <div class="dropborder">
-              <ul>
-                <li class="dropdown-content">
-                  <a id="comptabilité" href="">Comptabilité</a>
-                </li>
-                <li class="dropdown-content">
-                  <a id="audit" href="">Audit / Commissariat aux comptes</a>
-                </li>
-
-                <li class="dropdown-content">
-                  <a id="conseil" href="">Conseil juridique et fiscal</a>
-                </li>
-
-                <li class="dropdown-content">
-                  <a id="social" href="">Social</a>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class="link dropdown">
-            <a id="reflink my-auto" class="blockline">Nos partenaires</a>
-            <div class="dropborder">
-              <ul>
-                <li class="dropdown-content"><a id="7l" href="">7</a></li>
-                <li class="dropdown-content">
-                  <a id="8kype" href="">8</a>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class="link dropdown">
-            <a id="reflink my-auto" class="blockline">actualités</a>
-            <div class="dropborder">
-              <ul>
-                <li class="dropdown-content"><a id="9" href="">9</a></li>
-                <li class="dropdown-content">
-                  <a id="10" href="">10</a>
-                </li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-      </div>
+        <li class="link">
+          <a class="active my-auto" href="index.html">Accueil</a>
+        </li>
+        <li class="link dropdown">
+          <a id="reflink " class="blockline">Nous connaitre</a>
+          <ul class="dropborder">
+            <li class="dropdown-content"><a id="1" href="">1</a></li>
+            <li class="dropdown-content">
+              <a id="2" href="">2</a>
+            </li>
+          </ul>
+        </li>
+        <li class="link dropdown">
+          <a id="reflink my-auto" class="blockline">Notre équipe</a>
+          <ul class="dropborder">
+            <li class="dropdown-content"><a id="3" href="">3</a></li>
+            <li class="dropdown-content">
+              <a id="4" href="">4</a>
+            </li>
+          </ul>
+        </li>
+        <li class="link dropdown">
+          <a id="reflink my-auto" class="blockline">Nos services</a>
+          <ul class="dropborder">
+            <li class="dropdown-content">
+              <a id="comptabilité" href="">Comptabilité</a>
+            </li>
+            <li class="dropdown-content">
+              <a id="audit" href="">Audit / Commissariat aux comptes</a>
+            </li>
+            <li class="dropdown-content">
+              <a id="conseil" href="">Conseil juridique et fiscal</a>
+            </li>
+            <li class="dropdown-content">
+              <a id="social" href="">Social</a>
+            </li>
+          </ul>
+        </li>
+        <li class="link dropdown">
+          <a id="reflink my-auto" class="blockline">Nos partenaires</a>
+          <ul class="dropborder">
+            <li class="dropdown-content"><a id="7l" href="">7</a></li>
+            <li class="dropdown-content">
+              <a id="8kype" href="">8</a>
+            </li>
+          </ul>
+        </li>
+        <li class="link">
+          <a
+            href="http://absoluce.net/category/actu/"
+            id="reflink my-auto"
+            class="blockline"
+            >actualités</a
+          >
+        </li>
+      </ul>
     </nav>
 
     <!-- section 1-->
@@ -198,7 +189,7 @@
               class="d-block w-100"
               alt="Slide 1"
             />
-            <div class="try"></div>
+            <div class="section1--darker-picture"></div>
             <div class="carousel-caption d-none d-md-block">
               <h3>Vous créez votre entreprise</h3>
               <p>
@@ -268,7 +259,7 @@
     </section>
 
     <!-- section 2 -->
-    <section class="section2 d-flex container-fluid">
+    <section class="section2 container-fluid">
       <div class="row">
         <div class="col col-12 col-md-4">
           <h2>Création d'entreprise</h2>
@@ -304,7 +295,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-3 col-md-4">
-            <div class="intro">
+            <div class="section3--intro">
               <h3>Les services des experts comptables Absoluce</h3>
               <p>
                 Absoluce vous propose des services complets et de qualité au
@@ -320,52 +311,151 @@
               <p></p>
             </div>
           </div>
-          <div class="col-lg-9 col-md-8 text-bienvenue-rm">
-            <div class="row services">
-              <h3>Bienvenue chez RM Consultants</h3>
-              <ul>
-                <li class="margin-bottom">
-                  <p>
-                    Découvrez le nouveau site Internet de RM Consultants aux
-                    nouvelles couleurs d'Absoluce jeune groupement d’experts
-                    comptables et de commissaires aux comptes indépendants
-                    (création en 2009).
-                  </p>
-                </li>
-                <li class="margin-bottom">
-                  <p>
-                    Groupement sélectif, ses adhérents sont tous des référents
-                    dans leurs régions pour les entreprises. Ils respectent une
-                    charte de qualité commune, particulièrement exigeante en
-                    matière d’audit.
-                  </p>
-                </li>
-                <li class="margin-bottom">
-                  <p>
-                    Le groupement compte 27 adhérents, France entière, et
-                    souhaite garder une taille humaine. Absoluce garantit ainsi
-                    l’indépendance de ses membres, leur liberté d’expression
-                    dans les choix communs. Rejoindre Absoluce, c’est être
-                    acteur de son avenir.
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    Afin de vous offrir un haut niveau de performance dans ce
-                    contexte, Absoluce est membre d’INAA, association
-                    internationale de cabinets d’experts comptables indépendants
-                    présente dans plus de 50 pays sur chaque continent.
-                  </p>
-                </li>
-              </ul>
+          <div class="col-lg-9 col-md-8 section3--text-bienvenue-rm">
+            <h3>Bienvenue chez RM Consultants</h3>
+            <div class="container  services">
+              <p>
+                Découvrez le nouveau site Internet de RM Consultants aux
+                nouvelles couleurs d'Absoluce jeune groupement d’experts
+                comptables et de commissaires aux comptes indépendants (création
+                en 2009).
+              </p>
+
+              <p>
+                Groupement sélectif, ses adhérents sont tous des référents dans
+                leurs régions pour les entreprises. Ils respectent une charte de
+                qualité commune, particulièrement exigeante en matière d’audit.
+              </p>
+
+              <p>
+                Le groupement compte 27 adhérents, France entière, et souhaite
+                garder une taille humaine. Absoluce garantit ainsi
+                l’indépendance de ses membres, leur liberté d’expression dans
+                les choix communs. Rejoindre Absoluce, c’est être acteur de son
+                avenir.
+              </p>
+
+              <p>
+                Afin de vous offrir un haut niveau de performance dans ce
+                contexte, Absoluce est membre d’INAA, association internationale
+                de cabinets d’experts comptables indépendants présente dans plus
+                de 50 pays sur chaque continent.
+              </p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- section 4 -->
+    <section class="section4 container-fluid">
+      <div class="section4--title-center row">
+        <h3 class="coucou">Ils nous font confiance</h3>
+      </div>
+      <div class="section4--logos-partenaires row d-flex">
+        <div class="section4--picto">
+          <a href="#" class="logos">
+            <img
+              src="images/logos-partenaires/logo-chapoutier2.png"
+              class="blue"
+              alt="deal"
+            />
+            <img
+              src="images/logos-partenaires/logo-chapoutier.png"
+              class="black"
+              alt="deal"
+            />
+          </a>
+          <a href="#" class="logos">
+            <img
+              src="images/logos-partenaires/logo-eximium2.jpg"
+              class="blue"
+              alt="deal"
+            />
+            <img
+              src="images/logos-partenaires/logo-eximium.jpg"
+              class="black"
+              alt="deal"
+            />
+          </a>
+          <a href="#" class="logos">
+            <img
+              src="images/logos-partenaires/logo-ga2.png"
+              class="blue"
+              alt="deal"
+            />
+            <img
+              src="images/logos-partenaires/logo-ga.png"
+              class="black"
+              alt="deal"
+            />
+          </a>
+          <a href="#" class="logos">
+            <img
+              src="images/logos-partenaires/logo-genin2.png"
+              class="blue"
+              alt="deal"
+            />
+            <img
+              src="images/logos-partenaires/logo-genin.png"
+              class="black"
+              alt="deal"
+            />
+          </a>
+          <a href="#" class="logos">
+            <img
+              src="images/logos-partenaires/logo-kingjouet2.png"
+              class="blue"
+              alt="deal"
+            />
+            <img
+              src="images/logos-partenaires/logo-kingjouet.png"
+              class="black"
+              alt="deal"
+            />
+          </a>
+          <a href="#" class="logos">
+            <img
+              src="images/logos-partenaires/logo-perrier2.png"
+              class="blue"
+              alt="deal"
+            />
+            <img
+              src="images/logos-partenaires/logo-perrier.png"
+              class="black"
+              alt="deal"
+            />
+          </a>
+          <a href="#" class="logos">
+            <img
+              src="images/logos-partenaires/logo-alizon2.jpg"
+              class="blue"
+              alt="deal"
+            />
+            <img
+              src="images/logos-partenaires/logo-alizon.jpg"
+              class="black"
+              alt="deal"
+            />
+          </a>
+          <a href="#" class="logos">
+            <img
+              src="images/logos-partenaires/logo-autajon2.png"
+              class="blue"
+              alt="deal"
+            />
+            <img
+              src="images/logos-partenaires/logo-autajon.png"
+              class="black"
+              alt="deal"
+            />
+          </a>
+        </div>
+      </div>
+    </section>
+
     <!-- footer -->
-    <footer class="footer w-100">
+    <footer class="footer container-fluid">
       <div>
         <h4>Contact</h4>
         <ul>
@@ -384,12 +474,15 @@
     </footer>
 
     <!-- footer legal -->
-    <footer class="footer-legal w-100">
-      <div class="first-div">
-        <a class="logo-absoluce" href="http://absoluce.net/">
+    <footer class="footer-legal container-fluid">
+      <div class="footer-legal--first-div">
+        <a
+          class="footer-legal--first-div--logo-absoluce"
+          href="http://absoluce.net/"
+        >
           <img src="images/logo-absoluce.png" alt="" />
         </a>
-        <ul>
+        <ul class="footer-legal--first-div--links">
           <li><a href="#">Plan du site</a></li>
           <li><a href="#">Protection des données</a></li>
           <li><a href="#">Cookies</a></li>
