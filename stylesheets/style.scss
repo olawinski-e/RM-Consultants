@@ -1,0 +1,46 @@
+@import "index.scss", "colors.scss";
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $white;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  color: $another-grey;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  p,
+  ul,
+  li,
+  a {
+    margin: 0;
+    padding: 0;
+  }
+
+  li,
+  ul,
+  ol {
+    list-style: none;
+    text-decoration: none;
+  }
+
+  .light {
+    font-weight: 300;
+  }
+
+  .medium {
+    font-weight: 500;
+  }
+
+  .bold {
+    font-weight: 700;
+  }
+
+  a {
+    text-decoration: none;
+    color: $black;
+  }
+}

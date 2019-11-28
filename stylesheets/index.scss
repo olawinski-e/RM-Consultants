@@ -1,61 +1,23 @@
 @import "colors.scss";
 
-body {
-  margin: 0;
-  padding: 0;
-  background-color: $white;
-  font-family: "Source Sans Pro", sans-serif;
-  font-weight: 400;
-  color: $another-grey;
+$break-small: 500px;
+$break-large: 1200px;
 
-  h1,
-  h2,
-  h3,
-  h4,
-  p,
-  ul,
-  li,
-  a {
-    margin: 0;
-    padding: 0;
-  }
-
-  li,
-  ul,
-  ol {
-    list-style: none;
-    text-decoration: none;
-  }
-
-  .light {
-    font-weight: 300;
-  }
-
-  .medium {
-    font-weight: 500;
-  }
-
-  .bold {
-    font-weight: 700;
-  }
-
-  a {
-    text-decoration: none;
-    color: $black;
-  }
-}
+// @media screen and (min-width: $break-large) {
+//   float: right;
+// }
 
 // header
 .header {
   max-height: 148px;
   top: 0;
   z-index: 99;
-  background-color: $white;
   display: flex;
-  flex-direction: column;
-  .nav {
-    background-color: $super-dark-grey;
-    padding: 8px 4%;
+  background-color: $grey-bar;
+  &--nav {
+    margin: 0 6%;
+    padding: 8px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -89,6 +51,10 @@ body {
       }
     }
   }
+
+  @media screen and (max-width: $break-small) {
+    display: none;
+  }
 }
 
 //nav
@@ -104,10 +70,17 @@ body {
 
 .navbar {
   z-index: 999;
-  padding: 0 4%;
+  padding: 0 8%;
   display: flex;
   height: 100px;
   background-color: $white;
+  button {
+    color: $blue;
+    width: 40px;
+    .fa {
+      font-size: xx-large;
+    }
+  }
   li {
     float: left;
     list-style-type: none;
@@ -127,8 +100,7 @@ body {
   }
   &--brand {
     width: 16%;
-    min-width: 150px;
-    max-width: 200px;
+    min-width: 200px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -148,7 +120,7 @@ body {
       top: 100px;
       position: absolute;
       background-color: $light-grey;
-      padding: 0 4%;
+      padding: 0 8%;
       justify-content: flex-end;
       text-align: end;
       ul {
@@ -195,6 +167,41 @@ body {
   .dropdown:hover .dropdown-content {
     display: flex;
   }
+
+  @media screen and (max-width: $break-small) {
+    &--brand {
+      width: 50%;
+      padding: 10px 0;
+    }
+    &--navigation {
+      background-color: #fff;
+      flex-direction: column;
+      background-color: $light-grey;
+      padding: 10% 0;
+      height: auto;
+      position: absolute;
+      width: 100%;
+      left: 0;
+      top: 100px;
+      .link {
+        height: 10%;
+        width: 100%;
+        justify-content: center;
+        a {
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 17px;
+          display: block;
+        }
+        &:active {
+        }
+      }
+
+      .dropborder {
+        top: 408px;
+      }
+    }
+  }
 }
 
 //section 1
@@ -202,30 +209,14 @@ body {
   img {
     filter: brightness(80%);
   }
-  &--darker-picture {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(
-        ellipse farthest-corner at center center,
-        rgba(28, 37, 43, 0) 60%,
-        #1c252b 130%
-      )
-      repeat scroll 0% 0%;
-  }
-
   .carousel-caption {
     position: absolute;
     top: 30%;
-
-    h3 {
+    h1 {
       text-transform: uppercase;
       font-size: 3.2vw;
     }
   }
-
   .btn {
     opacity: 0.9;
     a {
@@ -242,7 +233,7 @@ body {
 
 // section 2
 .section2 {
-  padding: 5.6% 4%;
+  padding: 5.6% 8%;
   background-color: $white;
   display: flex;
   justify-content: space-around;
@@ -253,6 +244,7 @@ body {
     h2 {
       color: $blue1;
       text-align: center;
+      margin-bottom: 10px;
     }
   }
 }
@@ -303,11 +295,16 @@ body {
       color: $grey-blue;
     }
   }
+  @media screen and (max-width: $break-small) {
+    &--intro {
+      width: 100%;
+    }
+  }
 }
 
 // section 4
 .section4 {
-  padding: 6% 4%;
+  padding: 6% 6%;
   &--title-center {
     justify-content: center;
     color: $blue1;
@@ -338,6 +335,7 @@ body {
         width: 100%;
         display: block;
         position: relative;
+        transition: all 0.5s ease;
       }
       .blue {
         width: 100%;
@@ -346,16 +344,63 @@ body {
         left: 0;
         z-index: 50;
         display: none;
+        transition: all 0.5s ease;
       }
       &:hover {
         .black {
           display: none;
+          transition: all 0.5s ease;
         }
         .blue {
           display: block;
           position: relative;
+          transition: all 0.5s ease;
         }
       }
+    }
+  }
+}
+
+// section 5
+.section5 {
+  display: flex;
+  justify-content: space-between;
+  padding: 6% 6%;
+  background-color: $another-grey;
+
+  &--bureaux {
+    color: $white;
+    padding-right: 2%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &--title {
+      color: $blue1;
+      margin-bottom: 3%;
+    }
+    &--title2 {
+      font-size: 1.4rem;
+      margin-bottom: 2.4%;
+    }
+    &--paragraph {
+      height: 60%;
+      p {
+        line-height: 30px;
+        a {
+          color: $white;
+          &:hover {
+            color: $blue1;
+            text-decoration: none;
+            transition: all 0.5s ease;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: $break-small) {
+    iframe {
+      display: none;
     }
   }
 }
@@ -363,6 +408,14 @@ body {
 //footer
 .footer {
   display: flex;
+  justify-content: space-around;
+  padding: 3% 6%;
+  background-color: $grey-blue;
+  color: $white;
+  a {
+    color: $white;
+    transition: all 0.5s ease;
+  }
 }
 
 //footer
@@ -371,11 +424,10 @@ body {
   position: inherit;
   padding: 10px 4%;
   height: 40px;
-  background-color: $super-dark-grey;
+  background-color: $grey-bar;
   justify-content: space-between;
   align-items: center;
   bottom: 0;
-  margin-top: 100px;
   &--first-div {
     display: flex;
     &--logo-absoluce {
@@ -388,7 +440,6 @@ body {
         width: 100%;
       }
     }
-
     &--links {
       display: flex;
       flex-direction: row;
@@ -400,14 +451,21 @@ body {
         padding: 0 10px;
         a {
           text-decoration: none;
-          color: $grey;
+          color: $white;
+          transition: all 0.5s ease;
           width: 100%;
+          &:hover {
+            color: $blue1;
+          }
         }
       }
     }
   }
   p {
     font-size: 12px;
-    color: $grey;
+    color: $white;
+  }
+  @media screen and (max-width: $break-small) {
+    display: none;
   }
 }

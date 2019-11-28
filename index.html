@@ -21,13 +21,7 @@
     <link
       rel="stylesheet"
       type="text/css"
-      href="stylesheets/index.css"
-      media="screen"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="stylesheets/responsive.css"
+      href="stylesheets/style.css"
       media="screen"
     />
 
@@ -36,19 +30,19 @@
 
   <body>
     <!-- header -->
-    <header class="header w-100 container-fluid">
-      <section class="nav row">
-        <div class="nav--adress d-flex">
-          <div class="nav--info-contact pr-3">
+    <header class="header">
+      <section class="header--nav row">
+        <div class="header--nav--adress d-flex">
+          <div class="header--nav--info-contact pr-3">
             <img src="images/adressblue-icon.png" alt="adress" />
             <p>
-              36, rue Jean Jullien-Davin BP 105 - 26904 Valence Cedex 9
+              36, rue Jean Jullien-Davin 26000 Valence
             </p>
           </div>
           <div
             itemscope
             itemtype="https://schema.org/LocalBusiness"
-            class="nav--info-contact pr-3"
+            class="header--nav--info-contact pr-3"
           >
             <img src="images/phoneblue-icon.png" alt="phone number" />
             <span itemprop="telephone">
@@ -67,7 +61,7 @@
           </div>
         </div>
 
-        <div class="nav--reseaux-sociaux">
+        <div class="header--nav--reseaux-sociaux">
           <a href="https://www.linkedin.com/company/absoluce/">
             <i class="fa fa-linkedin" style="font-size:22px;color:#00c4f0;"></i
           ></a>
@@ -86,7 +80,7 @@
       </section>
     </header>
 
-    <nav id="navbar" class="navbar navbar-expand-lg navbar-light shadow-sm">
+    <nav id="navbar" class="navbar navbar-expand-lg shadow-sm">
       <a class="navbar--brand" href="index.html">
         <img
           class="logo-absoluce"
@@ -94,16 +88,8 @@
           alt="logo absoluce RM consultants"
         />
       </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
+      <button class="navbar-toggler" type="button" onclick="dropMenu()">
+        <i class="fa fa-bars"></i>
       </button>
 
       <ul
@@ -189,9 +175,8 @@
               class="d-block w-100"
               alt="Slide 1"
             />
-            <div class="section1--darker-picture"></div>
             <div class="carousel-caption d-none d-md-block">
-              <h3>Vous créez votre entreprise</h3>
+              <h1>Vous créez votre entreprise</h1>
               <p>
                 Bénéficiez d'un accompagnement personnalisé pour réussir votre
                 projet.
@@ -207,11 +192,10 @@
               class="d-block w-100"
               alt="Slide 2"
             />
-            <div class="try"></div>
             <div class="carousel-caption d-none d-md-block">
-              <h3>CONFIEZ NOUS VOTRE COMPTABILITÉ</h3>
+              <h1>CONFIEZ-NOUS VOTRE COMPTABILITÉ</h1>
               <p>
-                Gagnez du temps et concentrez vous sur l'essentiel : votre
+                Gagnez du temps et concentrez-vous sur l'essentiel : votre
                 business.
               </p>
               <button class="btn border border-light mt-4">
@@ -225,14 +209,15 @@
               class="d-block w-100"
               alt="Slide 3"
             />
-            <div class="try"></div>
             <div class="carousel-caption d-none d-md-block">
-              <h3>CONTACTEZ-NOUS</h3>
+              <h1>NOUS CONTACTEZ</h1>
               <p>
-                Nous pouvons vous aidez, contactez-nous
+                Nous pouvons vous aider.
               </p>
               <button class="btn border border-light mt-4">
-                <a href="#">En savoir plus</a>
+                <a href="mailto:rmconsultants@rmconsultants.fr"
+                  >Contactez-nous</a
+                >
               </button>
             </div>
           </div>
@@ -350,11 +335,11 @@
     <!-- section 4 -->
     <section class="section4 container-fluid">
       <div class="section4--title-center row">
-        <h3 class="coucou">Ils nous font confiance</h3>
+        <h2>Ils nous font confiance</h2>
       </div>
       <div class="section4--logos-partenaires row d-flex">
         <div class="section4--picto">
-          <a href="#" class="logos">
+          <a href="https://www.chapoutier.com/en/" class="logos">
             <img
               src="images/logos-partenaires/logo-chapoutier2.png"
               class="blue"
@@ -366,67 +351,7 @@
               alt="deal"
             />
           </a>
-          <a href="#" class="logos">
-            <img
-              src="images/logos-partenaires/logo-eximium2.jpg"
-              class="blue"
-              alt="deal"
-            />
-            <img
-              src="images/logos-partenaires/logo-eximium.jpg"
-              class="black"
-              alt="deal"
-            />
-          </a>
-          <a href="#" class="logos">
-            <img
-              src="images/logos-partenaires/logo-ga2.png"
-              class="blue"
-              alt="deal"
-            />
-            <img
-              src="images/logos-partenaires/logo-ga.png"
-              class="black"
-              alt="deal"
-            />
-          </a>
-          <a href="#" class="logos">
-            <img
-              src="images/logos-partenaires/logo-genin2.png"
-              class="blue"
-              alt="deal"
-            />
-            <img
-              src="images/logos-partenaires/logo-genin.png"
-              class="black"
-              alt="deal"
-            />
-          </a>
-          <a href="#" class="logos">
-            <img
-              src="images/logos-partenaires/logo-kingjouet2.png"
-              class="blue"
-              alt="deal"
-            />
-            <img
-              src="images/logos-partenaires/logo-kingjouet.png"
-              class="black"
-              alt="deal"
-            />
-          </a>
-          <a href="#" class="logos">
-            <img
-              src="images/logos-partenaires/logo-perrier2.png"
-              class="blue"
-              alt="deal"
-            />
-            <img
-              src="images/logos-partenaires/logo-perrier.png"
-              class="black"
-              alt="deal"
-            />
-          </a>
-          <a href="#" class="logos">
+          <a href="http://www.alizonindustrie.fr/" class="logos">
             <img
               src="images/logos-partenaires/logo-alizon2.jpg"
               class="blue"
@@ -438,7 +363,58 @@
               alt="deal"
             />
           </a>
-          <a href="#" class="logos">
+          <a
+            href="https://www.king-jouet.com/magasins/26-Drome/magasin-ST-MARCEL-LES-VALENCE-0510.htm"
+            class="logos"
+          >
+            <img
+              src="images/logos-partenaires/logo-kingjouet2.png"
+              class="blue"
+              alt="deal"
+            />
+            <img
+              src="images/logos-partenaires/logo-kingjouet.png"
+              class="black"
+              alt="deal"
+            />
+          </a>
+          <a href="https://www.groupe-genin.fr/" class="logos">
+            <img
+              src="images/logos-partenaires/logo-genin2.png"
+              class="blue"
+              alt="deal"
+            />
+            <img
+              src="images/logos-partenaires/logo-genin.png"
+              class="black"
+              alt="deal"
+            />
+          </a>
+          <a href="http://www.groupeavenir.fr/" class="logos">
+            <img
+              src="images/logos-partenaires/logo-ga2.png"
+              class="blue"
+              alt="deal"
+            />
+            <img
+              src="images/logos-partenaires/logo-ga.png"
+              class="black"
+              alt="deal"
+            />
+          </a>
+          <a href="https://www.perrier.fr/index.php" class="logos">
+            <img
+              src="images/logos-partenaires/logo-perrier2.png"
+              class="blue"
+              alt="deal"
+            />
+            <img
+              src="images/logos-partenaires/logo-perrier.png"
+              class="black"
+              alt="deal"
+            />
+          </a>
+          <a href="https://www.autajon.com/fr/" class="logos">
             <img
               src="images/logos-partenaires/logo-autajon2.png"
               class="blue"
@@ -450,8 +426,45 @@
               alt="deal"
             />
           </a>
+          <a href="https://www.eximium.fr/" class="logos">
+            <img
+              src="images/logos-partenaires/logo-eximium2.jpg"
+              class="blue"
+              alt="deal"
+            />
+            <img
+              src="images/logos-partenaires/logo-eximium.jpg"
+              class="black"
+              alt="deal"
+            />
+          </a>
         </div>
       </div>
+    </section>
+
+    <!-- section 5 -->
+    <section id="acces" class="section5 container-fluid">
+      <div class="section5--bureaux">
+        <h2 class="section5--bureaux--title">Nos bureaux</h2>
+        <h4 class="section5--bureaux--title2">RM Consultants</h4>
+        <div class="section5--bureaux--paragraph">
+          <p>
+            36, rue Jean Jullien-Davin <br />26000 Valence <br />Tél. : 04 75 78
+            44 78 <br />Fax : 04 75 78 01 98 <br />
+            <a href="mailto:rmconsultants@rmconsultants.fr"
+              >E-mail : rmconsultants@rmconsultants.fr</a
+            >
+          </p>
+        </div>
+      </div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2825.980611886835!2d4.896156615764818!3d44.903390279098254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f557afe14ca0cd%3A0x6d46033b0ceb39cf!2sRM%20Consultants!5e0!3m2!1sen!2sfr!4v1574778114558!5m2!1sen!2sfr"
+        width="700"
+        height="300"
+        frameborder="0"
+        style="border:0;"
+        allowfullscreen=""
+      ></iframe>
     </section>
 
     <!-- footer -->
@@ -460,7 +473,7 @@
         <h4>Contact</h4>
         <ul>
           <li><a href="">Coordonées</a></li>
-          <li><a href="">Plan d'accès</a></li>
+          <li><a href="#access">Plan d'accès</a></li>
         </ul>
       </div>
 
