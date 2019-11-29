@@ -33,7 +33,7 @@
     <header class="header">
       <section class="header--nav row">
         <div class="header--nav--adress d-flex">
-          <div class="header--nav--info-contact pr-3">
+          <div class="header--nav--info-contact1 pr-3">
             <img src="images/adressblue-icon.png" alt="adress" />
             <p>
               36, rue Jean Jullien-Davin 26000 Valence
@@ -42,7 +42,7 @@
           <div
             itemscope
             itemtype="https://schema.org/LocalBusiness"
-            class="header--nav--info-contact pr-3"
+            class="header--nav--info-contact2 hidden pr-3"
           >
             <img src="images/phoneblue-icon.png" alt="phone number" />
             <span itemprop="telephone">
@@ -53,7 +53,7 @@
               >
             </span>
           </div>
-          <div class="d-flex">
+          <div class="d-flex pr-3">
             <img src="images/mailblue-icon.png" alt="email" />
             <a href="mailto:rmconsultants@rmconsultants.fr"
               ><p>rmconsultants@rmconsultants.fr</p></a
@@ -80,79 +80,83 @@
       </section>
     </header>
 
-    <nav id="navbar" class="navbar navbar-expand-lg shadow-sm">
-      <a class="navbar--brand" href="index.html">
+    <!-- navbar -->
+    <section id="navbar" class="navigation navbar-expand-lg shadow-sm">
+      <a class="brand--logo" href="index.html">
         <img
           class="logo-absoluce"
           src="images/logo-absoluce-rm.jpg"
           alt="logo absoluce RM consultants"
         />
       </a>
-      <button class="navbar-toggler" type="button" onclick="dropMenu()">
-        <i class="fa fa-bars"></i>
-      </button>
-
-      <ul
-        class="collapse navbar-collapse navbar--navigation"
-        id="navbarSupportedContent"
-      >
-        <li class="link">
-          <a class="active my-auto" href="index.html">Accueil</a>
-        </li>
-        <li class="link dropdown">
-          <a id="reflink " class="blockline">Nous connaitre</a>
-          <ul class="dropborder">
-            <li class="dropdown-content"><a id="1" href="">1</a></li>
-            <li class="dropdown-content">
-              <a id="2" href="">2</a>
-            </li>
-          </ul>
-        </li>
-        <li class="link dropdown">
-          <a id="reflink my-auto" class="blockline">Notre équipe</a>
-          <ul class="dropborder">
-            <li class="dropdown-content"><a id="3" href="">3</a></li>
-            <li class="dropdown-content">
-              <a id="4" href="">4</a>
-            </li>
-          </ul>
-        </li>
-        <li class="link dropdown">
-          <a id="reflink my-auto" class="blockline">Nos services</a>
-          <ul class="dropborder">
-            <li class="dropdown-content">
-              <a id="comptabilité" href="">Comptabilité</a>
-            </li>
-            <li class="dropdown-content">
-              <a id="audit" href="">Audit / Commissariat aux comptes</a>
-            </li>
-            <li class="dropdown-content">
-              <a id="conseil" href="">Conseil juridique et fiscal</a>
-            </li>
-            <li class="dropdown-content">
-              <a id="social" href="">Social</a>
-            </li>
-          </ul>
-        </li>
-        <li class="link dropdown">
-          <a id="reflink my-auto" class="blockline">Nos partenaires</a>
-          <ul class="dropborder">
-            <li class="dropdown-content"><a id="7l" href="">7</a></li>
-            <li class="dropdown-content">
-              <a id="8kype" href="">8</a>
-            </li>
-          </ul>
-        </li>
-        <li class="link">
-          <a
-            href="http://absoluce.net/category/actu/"
-            id="reflink my-auto"
-            class="blockline"
-            >actualités</a
-          >
-        </li>
-      </ul>
-    </nav>
+      <nav>
+        <div class="nav-mobile">
+          <a id="nav-toggle" href="#!"><span></span></a>
+        </div>
+        <ul class="nav-list">
+          <li class="link">
+            <a class="active blockline" href="index.html">Accueil</a>
+          </li>
+          <li>
+            <a href="#!" class="blockline">Nous connaitre</a>
+            <ul class="nav-dropdown">
+              <li><a id="1" href="">1</a></li>
+              <li>
+                <a id="2" href="">2</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#!" class="blockline">Notre équipe</a>
+            <ul class="nav-dropdown">
+              <li><a id="3" href="">3</a></li>
+              <li>
+                <a id="4" href="">4</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#!" class="blockline">Nos services</a>
+            <ul class="nav-dropdown">
+              <li>
+                <a href="">Comptabilité</a>
+              </li>
+              <li>
+                <a href="">Audit / Commissariat aux comptes</a>
+              </li>
+              <li>
+                <a href="">Conseil juridique et fiscal</a>
+              </li>
+              <li>
+                <a href="">Social</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#!" class="blockline">Nos partenaires</a>
+            <ul class="nav-dropdown">
+              <li>
+                <a href="">FF</a>
+              </li>
+              <li>
+                <a href="">gg</a>
+              </li>
+              <li>
+                <a href="">dd</a>
+              </li>
+              <li>
+                <a href="">cc</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="http://absoluce.net/category/actu/" class="blockline"
+              >Actualités
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </section>
 
     <!-- section 1-->
     <section class="section1">
